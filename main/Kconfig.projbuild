@@ -1,0 +1,23 @@
+menu "Device config"
+    config DEVICE_ID
+        string "ID of the device"
+        default ""
+    config MQTT_BROKER_URL
+        string "Broker URL"
+        default "test.mosquitto.org"
+    config MQTT_BROKER_PORT
+        int "Broker Port"
+        default 1883
+    config MQTT_BROKER_USERNAME
+        string "Auth login"
+        default ""
+    config MQTT_BROKER_PASSWORD
+        string "Auth password"
+        default ""
+    config WIFI_SSID
+        string "WIFI SSID"
+        default ""
+    config WIFI_PASS
+        string "WIFI Password"
+        default ""
+endmenu
